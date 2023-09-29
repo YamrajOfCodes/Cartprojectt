@@ -1,0 +1,116 @@
+nav{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: aqua;
+    box-shadow: 1px 1px 1px #ccc;
+    color: white;
+}
+.rightLayout{
+    display: flex;
+    gap: 14px;
+    margin-right: 50px;
+}
+.card{
+    margin-top: 1vh;
+    margin-left: 1vh;
+    height: 240px;
+    width: 250px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    gap: 10px;
+    border: 0.2px solid black;
+    justify-content: center;
+}
+.card img{
+    height: 70%;
+}
+.display{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+button{
+height: 30px;
+width: 70px;
+cursor: pointer;
+}
+.grid{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+
+@media screen and (max-width: 480px) {
+    nav{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: aqua;
+        box-shadow: 1px 1px 1px #ccc;
+        color: white;
+        height: 4vh;
+    }
+    .card{
+
+        height: 120px;
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px 10px;
+        margin-left: 1vh;
+        /* border: 1px solid black; */
+    }
+    .card img{
+        height: 50%;
+    }
+    button{
+        height: 20px;
+        width: 40px;
+        cursor: pointer;
+        }
+        .grid{
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        
+  }
+  @media screen and (max-width: 600px){
+    .grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+  }
+  .cart{
+      height: 200px;
+      width: 250px;
+      border: 1px solid black;
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+.cart img{
+    height: 75%;
+    width: 100%;
+}
+.cart-container{
+      margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+  }
+  .flex{
+    width: 80%;
+    display: flex;
+   justify-content: space-between;
+  }
+  a{
+    padding-top: 1rem;
+  }
